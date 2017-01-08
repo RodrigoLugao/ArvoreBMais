@@ -157,6 +157,7 @@ TABM* remover(TABM* arv, int ch, int t){
 				z->info[0] = NULL;
 				arv->chave[i] = z->chave[1];
 				int k;
+				y->nchaves++;
 				for (k=1; k < z->nchaves; k++){
 					z->chave[k-1] = z->chave[k];
 					z->info[k-1] = z->info[k];
